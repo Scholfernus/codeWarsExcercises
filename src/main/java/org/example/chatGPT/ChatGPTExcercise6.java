@@ -4,18 +4,15 @@ import java.util.*;
 import java.util.stream.IntStream;
 
 public class ChatGPTExcercise6 {
+    // 6. Znajdowanie maksymalnej i minimalnej wartości w liście
     public static void main(String[] args) {
-        List<Integer> numbersToSOrt = new ArrayList<>(List.of(5, -3, 10, 16, -25, 0, 12, 3));
-        System.out.println(minMax(numbersToSOrt) + " " + minMax2(numbersToSOrt));
+        List<Integer> numbersToSOrt = new ArrayList<>(List.of(5, -3, 10, 16, -25, 0, 12, 3, 100));
+        System.out.println(minMax(numbersToSOrt));
     }
-    public static int minMax(List<Integer> numbers) {
-        Collections.sort(numbers);
-        int min = numbers.get(0);
-        return min;
-    }
-    public static int minMax2(List<Integer> numbers2) {
-        Collections.sort(numbers2);
-        int max = numbers2.get(numbers2.size()-1);
-        return max;
+
+    public static List<Integer> minMax(List<Integer> numbers) {
+        int min = Collections.min(numbers);
+        int max = Collections.max(numbers);
+        return List.of(min, max);
     }
 }
