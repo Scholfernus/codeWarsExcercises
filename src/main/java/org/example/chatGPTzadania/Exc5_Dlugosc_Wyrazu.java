@@ -17,8 +17,9 @@ public class Exc5_Dlugosc_Wyrazu {
             countWordLength.add(word);
             wordLength.add(word.length());
         }
-        Collections.sort(wordLength);
-        for (var v : wordLength ) {
+        Collections.sort(countWordLength, (a,b)->Integer.compare(a.length(), b.length()));
+        System.out.println("Pososrtowane liczby według długości wyrazu: ");
+        for (var v : countWordLength ) {
             System.out.println(v);
         }
     }
