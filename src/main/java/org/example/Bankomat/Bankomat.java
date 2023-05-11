@@ -12,8 +12,9 @@ public  class Bankomat {
         SprawdzanieSalda saldo = new SprawdzanieSalda(1000);
         int stanKonta = saldo.cashCheck();
         System.out.println("Stan konta: " + stanKonta);
-        Bankomat bankomat = new Bankomat();
-        bankomat.changePin(1234, 5678);
+        PinChange change = new PinChange(1234);
+        change.changePin(1234,3698);
+        System.out.println("Nowy PIN " + change.getPIN());
 
     }
 }
