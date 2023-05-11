@@ -4,6 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class SumaLiczb {
+    // ten kod nie działa prawidłowo
     public static void main(String[] args) {
         System.out.println("Podaj dowolną liczbę kilkucyfrową, a policzę sumę liczb: ");
         Scanner input = new Scanner(System.in);
