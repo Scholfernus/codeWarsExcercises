@@ -1,4 +1,4 @@
-package org.example.Bankomat;
+package org.example.bankomat;
 public class PinChange extends Bankomat {
     private int PIN;
 
