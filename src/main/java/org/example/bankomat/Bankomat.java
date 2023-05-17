@@ -1,4 +1,4 @@
-package org.example.Bankomat;
+package org.example.bankomat;
 
 public  class Bankomat {
     private long nrAccount;
