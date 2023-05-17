@@ -1,4 +1,4 @@
-package org.example.Bankomat;
+package org.example.bankomat;
 
 public class Wplata extends Bankomat {
     private int cashIn;
