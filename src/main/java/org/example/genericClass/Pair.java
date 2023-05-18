@@ -36,14 +36,15 @@ public class Pair<K, V> {
         mix.add(new Pair<>("A", 1));
         mix.add(new Pair<>("B", 2));
         mix.add(new Pair<>("C", 3));
+        extracted(mix);
+    }
 
-        for (Pair<String,Integer> pair :mix) {
+    private static void extracted(List<Pair<String, Integer>> mix) {
+        for (Pair<String,Integer> pair : mix) {
             String first1 = pair.getFirst();
             Integer second1 = pair.getSecond();
             System.out.println(first1 + " " + second1);
         }
-
-
     }
 }
 
