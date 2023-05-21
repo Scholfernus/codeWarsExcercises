@@ -22,8 +22,8 @@ public class ExerStrings {
         System.out.println("Napisz kolejne zdanie, zmienię jego litery na małe.");
         String letDown = exercise.letterDown(scanner.nextLine());
         System.out.println("Zdanie z małymi literami:\n" + letDown);
-        String firstLetter = exercise.firstLetter(scanner.nextLine());
         System.out.println("Podaj zdanie, a wyświetlę 1-szą literę:");
+        String firstLetter = exercise.firstLetter(scanner.nextLine());
         System.out.println("Zadanie z pierwszą literą zdania:\n" + firstLetter);
         System.out.println("Podaj zdanie, a wyświetlę ostatnią literę:");
         String lastLetter = exercise.lastLetter(scanner.nextLine());
