@@ -11,9 +11,7 @@ public class ExerStrings {
         ExerStrings exercise = new ExerStrings();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Napisz dowolne zdanie, obliczę jego długość.");
-        String nextLine = scanner.nextLine();
-
-        int i = exercise.writingLength(nextLine);
+        int i = exercise.writingLength(scanner.nextLine());
         System.out.printf("Zdanie ma %d znaki.\n",i);
 
         System.out.println("Napisz kolejne zdanie, zmienię jego litery na wielkie.");
@@ -22,15 +20,17 @@ public class ExerStrings {
         System.out.println("Zdanie z wielkimi literami:\n" + letUp);
 
         System.out.println("Napisz kolejne zdanie, zmienię jego litery na małe.");
-        String toDown = scanner.nextLine();
-        String letDown = exercise.letterDown(toDown);
-        String firstLetter = exercise.firstLetter(scanner.nextLine());
-        String lastLetter = exercise.lastLetter(scanner.nextLine());
+        String letDown = exercise.letterDown(scanner.nextLine());
         System.out.println("Zdanie z małymi literami:\n" + letDown);
+        String firstLetter = exercise.firstLetter(scanner.nextLine());
+        System.out.println("Podaj zdanie, a wyświetlę 1-szą literę:");
         System.out.println("Zadanie z pierwszą literą zdania:\n" + firstLetter);
+        System.out.println("Podaj zdanie, a wyświetlę ostatnią literę:");
+        String lastLetter = exercise.lastLetter(scanner.nextLine());
         System.out.println("Zadanie z ostatnią literą zdania:\n" + lastLetter);
     }
     public int writingLength(String text){
+
         return text.length();
     }
     public String letterUp(String text1){
