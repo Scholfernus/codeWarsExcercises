@@ -25,7 +25,7 @@ public class Exc4_Liczby_Pierwsze {
         }
         System.out.println("Liczby pierwsze w przedziale 2 do " + n + ": ");
         for (int prime : primes) {
-            System.out.println(prime + " ");
+            System.out.printf("%d%n",prime);
         }
     }
 }
