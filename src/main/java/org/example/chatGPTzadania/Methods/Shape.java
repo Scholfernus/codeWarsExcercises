@@ -1,9 +1,9 @@
 package org.example.chatGPTzadania.Methods;
 
 public interface Shape {
-    double calculateArea();
+    abstract double calculateArea();
 
-    double calculatePerimeter();
+    abstract double calculatePerimeter();
 }
 
 class Circle implements Shape {
