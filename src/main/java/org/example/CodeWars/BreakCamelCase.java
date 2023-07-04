@@ -5,13 +5,17 @@ public class BreakCamelCase {
         System.out.println(camelCase("camelCasingTest"));
     }
     public static String camelCase(String input) {
-            int numb = 0;
-        char[] findBigLetter = input.toCharArray();
-        for (int i = 0; i < findBigLetter.length; i++) {
-            if (findBigLetter[i]<=65 || findBigLetter[i]<=90){
-                numb = findBigLetter[i];
+        StringBuilder sb = new StringBuilder();
+        System.out.println(sb.toString());
+        for (int i = 0; i < input.length(); i++) {
+            char currentChar = input.charAt(i);
+            if (Character.isUpperCase(currentChar) && i > 0){
+                sb.append(" ");
             }
+            sb.append(currentChar);
         }
-        return Integer.toString(numb);
+        return sb.toString();
     }
 }
+
+//  return input.replaceAll("([A-Z])", " $1");
