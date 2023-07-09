@@ -6,6 +6,11 @@ public class Circle extends Shape {
         this.radius = radius;
     }
 
+    public Circle(int width, int length, double radius) {
+        super(width, length);
+        this.radius = radius;
+    }
+
     public double getArea() {
         return Math.PI * radius * radius;
     }
@@ -14,6 +19,9 @@ public class Circle extends Shape {
 class Shape {
     int width;
     int length;
+
+    public Shape() {
+    }
 
     public Shape(int width, int length) {
         this.width = width;
