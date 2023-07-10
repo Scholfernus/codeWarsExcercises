@@ -1,4 +1,4 @@
-package org.example.chatGPTzadania.Methods;
+package org.example.chatGPTzadania.methods;
 
 public class AverageInteger {
     public static void main(String[] args) {

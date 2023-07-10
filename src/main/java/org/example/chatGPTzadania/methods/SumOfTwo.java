@@ -1,7 +1,5 @@
-package org.example.chatGPTzadania.Methods;
+package org.example.chatGPTzadania.methods;
 
-
-import org.example.chatGPTanotherExc.StringBuilderReverse;
 
 public class SumOfTwo {
     public static int[] numbers = {2, 9, 4, -8, 15, -7, 10, -2, 33};

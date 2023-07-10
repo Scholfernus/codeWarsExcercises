@@ -1,4 +1,4 @@
-package org.example.chatGPTzadania.Methods;
+package org.example.chatGPTzadania.methods;
 
 public interface Animal {
     void eat();

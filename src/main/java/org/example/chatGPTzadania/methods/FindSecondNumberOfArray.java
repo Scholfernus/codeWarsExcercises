@@ -1,4 +1,4 @@
-package org.example.chatGPTzadania.Methods;
+package org.example.chatGPTzadania.methods;
 
 import java.util.Arrays;
 
