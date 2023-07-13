@@ -12,7 +12,7 @@ public class ListExercise {
     public static void main(String[] args) {
         List<Integer> numbers = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Podaj liczbę całkowitą: wpisz dowolną literę, aby zakończyć. ");
+        System.out.println("W celu utworzenia zbioru liczb, podaj dowolną liczbę całkowitą:\nWpisz dowolną literę, aby zakończyć. ");
         while (scanner.hasNextInt()) {
             numbers.add(scanner.nextInt());
         }
