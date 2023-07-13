@@ -2,7 +2,7 @@ package org.example.CodeWars;
 
 public class Alphabet {
     public static void main(String[] args) {
-        System.out.println(position('z'));
+        System.out.println(position('g'));
     }
 
     public static String position(char alphabet) {
