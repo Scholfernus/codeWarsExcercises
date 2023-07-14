@@ -1,5 +1,5 @@
 package org.example.CodeWars;
-
+// Wyświetlanie liczb spełniających warunek wartościowy
 public class LimitNumber {
     public static void main(String[] args) {
         int[] numbers = {66, 101, 201, 199, 303, 200};
