@@ -3,7 +3,7 @@ package org.example.codingWithJohn;
 public class Lambdas {
     public static void main(String[] args) {
 //    Cat myCat = new Cat();
-    myCat.print();
+    // myCat.print();
     }
     public interface Printable{
         void print();
