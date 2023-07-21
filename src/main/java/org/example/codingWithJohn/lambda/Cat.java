@@ -1,4 +1,4 @@
-package org.example.codingWithJohn;
+package org.example.codingWithJohn.lambda;
 
 public class Cat implements Printable {
     public String name;

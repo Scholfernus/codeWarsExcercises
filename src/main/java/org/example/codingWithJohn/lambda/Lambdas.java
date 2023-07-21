@@ -1,6 +1,6 @@
-package org.example.codingWithJohn;
+package org.example.codingWithJohn.lambda;
 
-import static org.example.codingWithJohn.Cat.printThing;
+import static org.example.codingWithJohn.lambda.Cat.printThing;
 
 public class Lambdas {
     public static void main(String[] args) {
