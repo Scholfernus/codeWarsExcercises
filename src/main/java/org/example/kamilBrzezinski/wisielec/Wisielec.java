@@ -1,4 +1,4 @@
-package org.example.kamilBrzezinski;
+package org.example.kamilBrzezinski.wisielec;
 
 import java.util.Arrays;
 import java.util.List;
