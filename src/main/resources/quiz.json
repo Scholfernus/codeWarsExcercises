@@ -5,7 +5,7 @@
     "b": 1991,
     "c": 1995,
     "d": 2000,
-    "prawidłowaOdpowiedź": "c"
+    "prawidlowaOdpowiedz": "c"
   },
   {
     "pytanie": "Kto stworzył Javę?",
@@ -13,7 +13,7 @@
     "b": "Steve Jobs",
     "c": "James Gosling",
     "d": "Dennis Ritchie",
-    "prawidłowaOdpowiedź": "c"
+    "prawidlowaOdpowiedz": "c"
   },
   {
     "pytanie": "W którym roku pojawiła się nasz dom?",
@@ -21,7 +21,6 @@
     "b": 1998,
     "c": 1999,
     "d": 2008,
-    "prawidłowa odpowiedź": "d"
+    "prawidlowaOdpowiedz": "d"
   }
-
 ]
