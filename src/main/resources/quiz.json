@@ -1,0 +1,27 @@
+[
+  {
+    "pytanie": "W którym roku pojawiła się Java?",
+    "a": 1986,
+    "b": 1991,
+    "c": 1995,
+    "d": 2000,
+    "prawidłowaOdpowiedź": "c"
+  },
+  {
+    "pytanie": "Kto stworzył Javę?",
+    "a": "Bill Gates",
+    "b": "Steve Jobs",
+    "c": "James Gosling",
+    "d": "Dennis Ritchie",
+    "prawidłowaOdpowiedź": "c"
+  },
+  {
+    "pytanie": "W którym roku pojawiła się nasz dom?",
+    "a": 1987,
+    "b": 1998,
+    "c": 1999,
+    "d": 2008,
+    "prawidłowa odpowiedź": "d"
+  }
+
+]
