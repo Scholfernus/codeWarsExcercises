@@ -24,6 +24,7 @@ public class Quiz {
     }
     public void play() throws IOException {
         Scanner scanner = new Scanner(System.in);
+        int points = 0;
         ObjectMapper mapper = new ObjectMapper();
         List<Question>questions = mapper.readValue(quizJson, new TypeReference<>(){});
         for (Question question:questions) {
@@ -38,11 +39,13 @@ public class Quiz {
 
             if (question.getPrawidlowaOdpowiedz().equals(answer)){
                 System.out.println("To jest prawidłowa odpowiedź.");
+            points++;
             }
             else {
                 System.out.println("To jest zła odpowiedź, prawidłowa odpowiedź to: " +question.getPrawidlowaOdpowiedz());
             }
         }
+        System.out.println("To już koniec gry.\n Twoja liczba punktów to: "+  points);
         scanner.close();
     }
 }
