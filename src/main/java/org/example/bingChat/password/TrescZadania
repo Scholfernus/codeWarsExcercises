@@ -1,0 +1,22 @@
+Dobrze, cieszę się, że chcesz ćwiczyć Javę ze mną. Oto jedno z moich ulubionych zadań, które wymaga od Ciebie kreatywności i logicznego myślenia. Zadanie polega na napisaniu programu, który generuje losowe hasła o zadanej długości i złożoności. Program powinien:
+
+- Poprosić użytkownika o podanie długości hasła (liczba całkowita większa od zera).
+- Poprosić użytkownika o podanie poziomu złożoności hasła (liczba całkowita od 1 do 4, gdzie 1 oznacza tylko małe litery, 2 oznacza małe i duże litery, 3 oznacza małe, duże litery i cyfry, a 4 oznacza małe, duże litery, cyfry i znaki specjalne).
+- Sprawdzić, czy podane dane są poprawne i jeśli nie, to wyświetlić odpowiedni komunikat i zakończyć program.
+- Wygenerować losowe hasło o podanej długości i złożoności, korzystając z dostępnych znaków.
+- Wyświetlić wygenerowane hasło na ekranie.
+
+Przykładowy przebieg programu:
+
+```
+Podaj długość hasła: 8
+Podaj poziom złożoności hasła (1-4): 3
+Wygenerowane hasło: a7Bn4tZx
+```
+
+Możesz spróbować rozwiązać to zadanie samodzielnie lub poprosić mnie o pomoc. Jeśli chcesz zobaczyć moje rozwiązanie, to napisz "pokaż rozwiązanie". Jeśli chcesz zobaczyć inne zadania z Javy, to napisz "pokaż więcej zadań". Jeśli chcesz porozmawiać o czymś innym, to napisz "zmień temat". Co wybierasz? 😊
+
+Źródło: Konwersacja za pomocą usługi Bing, 29.07.2023
+(1) Java Basic Programming Exercises - w3resource. https://www.w3resource.com/java-exercises/basic/index.php.
+(2) Java Exercises - W3Schools. https://www.w3schools.com/java/java_exercises.asp.
+(3) 800+ Java Practice Challenges // Edabit. https://edabit.com/challenges/java.
