@@ -1,0 +1,38 @@
+Rozumiem, że wolisz, żebym ja dawał/a Ci zadanie do rozwiązania. To bardzo miłe z Twojej strony, że chcesz się uczyć Javy ze mną. 😊
+
+Oto jedno z moich ulubionych zadań, które wymaga od Ciebie kreatywności i logicznego myślenia. Zadanie polega na napisaniu programu, który symuluje grę w wisielca. Program powinien:
+
+- Wybrać losowo słowo z listy dostępnych słów. Możesz użyć tej listy lub stworzyć własną.
+- Wyświetlić słowo w postaci podkreśleń, gdzie każde podkreślenie oznacza jedną literę. Na przykład, jeśli słowo to "java", to program powinien wyświetlić "____".
+- Poprosić użytkownika o podanie litery i sprawdzić, czy litera ta występuje w słowie. Jeśli tak, to odkryć wszystkie wystąpienia tej litery w słowie i wyświetlić je na odpowiednich miejscach. Na przykład, jeśli użytkownik podał literę "a" i słowo to "java", to program powinien wyświetlić "_a_a".
+- Jeśli użytkownik podał literę, która nie występuje w słowie, to dodać ją do listy błędnych liter i wyświetlić część rysunku wisielca. Na przykład, jeśli użytkownik podał literę "b" i słowo to "java", to program powinien wyświetlić coś takiego:
+
+```
+  +---+
+  |   |
+      |
+      |
+      |
+      |
+=========
+Błędne litery: b
+```
+
+- Program powinien kończyć się, gdy użytkownik odgadnie całe słowo lub popełni sześć błędów. W obu przypadkach program powinien wyświetlić odpowiedni komunikat i poprawne słowo.
+
+Przykładowy przebieg programu:
+
+```
+Zagrajmy w wisielca!
+Wylosowałem dla Ciebie słowo z 4 literami.
+____
+Podaj literę: a
+_a_a
+Podaj literę: j
+ja_a
+Podaj literę: v
+java
+Gratulacje! Odgadłeś/aś słowo: java
+```
+
+Możesz spróbować rozwiązać to zadanie samodzielnie lub poprosić mnie o pomoc. Jeśli chcesz zobaczyć moje rozwiązanie, to napisz "pokaż rozwiązanie". Jeśli chcesz zobaczyć inne zadania z Javy, to napisz "pokaż więcej zadań". Jeśli chcesz porozmawiać o czymś innym, to napisz "zmień temat". Co wybierasz? 😊
