@@ -31,7 +31,6 @@ public class Wisielec {
                         found = true;
                     }
                 }
-
                 if (!found) {
                     System.out.println(falseLetters.append(s).append(", "));
                 }
@@ -47,6 +46,7 @@ public class Wisielec {
         }
         return false;
     }
+
     private static boolean gameOver(String word, char[] userWord) {
         if (isCorrect(userWord)) {
             System.out.println("Gratulacje! Odgadłeś słowo !!!");
@@ -60,7 +60,7 @@ public class Wisielec {
     }
 
     private static boolean isCorrect(char[] userWord) {
-         for (char c : userWord) {
+        for (char c : userWord) {
             if (c == '-') {
                 return false;
             }
@@ -73,8 +73,11 @@ public class Wisielec {
         for (char c : userWord) {
             if (c == '-') {
                 numberOfIncorrectWords++;
+
             }
         }
+
         return numberOfIncorrectWords >= 12;
     }
+
 }
