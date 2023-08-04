@@ -1,4 +1,4 @@
-package org.example.w3resource.com;
+package org.example.w3resource.com.conditionalStatement;
 
 public class PrintStarNUmbers2Version {
     public static void main(String[] args) {

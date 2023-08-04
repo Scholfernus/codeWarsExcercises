@@ -1,4 +1,4 @@
-package org.example.w3resource.com;
+package org.example.w3resource.com.conditionalStatement;
 
 import java.time.LocalDate;
 import java.time.ZoneId;

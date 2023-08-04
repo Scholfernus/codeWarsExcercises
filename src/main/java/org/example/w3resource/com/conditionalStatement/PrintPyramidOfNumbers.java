@@ -1,4 +1,4 @@
-package org.example.w3resource.com;
+package org.example.w3resource.com.conditionalStatement;
 
 public class PrintPyramidOfNumbers {
     public static void main(String[] args) {
@@ -6,7 +6,7 @@ public class PrintPyramidOfNumbers {
         for (int i = 1; i < 10; i++) {
             for (int j = 0; j < i; j++) {
 
-                System.out.print(space + i);
+                System.out.print(i);
             }
             System.out.println();
         }

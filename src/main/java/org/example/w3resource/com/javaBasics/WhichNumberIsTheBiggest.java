@@ -1,4 +1,4 @@
-package org.example.w3resource.com;
+package org.example.w3resource.com.javaBasics;
 
 import java.util.Scanner;
 
