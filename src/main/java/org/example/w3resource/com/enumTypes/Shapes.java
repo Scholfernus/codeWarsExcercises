@@ -8,7 +8,6 @@ public class Shapes {
         RECTANGLE,
         HEXAGON
     }
-
     public static void main(String[] args) {
         Shape firstElement = Shape.SQUARE;
         Shape secondElement = Shape.TRIANGLE;
