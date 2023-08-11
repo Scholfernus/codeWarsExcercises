@@ -2,7 +2,7 @@ package org.example.w3resource.com.exceptions;
 
 import java.util.Arrays;
 
-public class NumberIssOdd {
+public class NumberIsOdd {
     public static void main(String[] args) {
         int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9};
         oddNumber(numbers);
