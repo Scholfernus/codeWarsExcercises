@@ -12,7 +12,8 @@ public class FindMinAndMaxInteger {
         OptionalInt max = numbers.stream().mapToInt(Integer::shortValue).max();
         System.out.println("Minimum value: " + min.orElse(0));
         System.out.println("Maximum value: " + max.orElse(0));
-        Optional<Integer> max1 = numbers.stream().max((x, y) -> x.compareTo(y));
+        Optional<Integer> max1 = numbers.stream().max(Integer::compareTo);
+        // ta sama metoda pisana jak powyżej
         Optional<Integer> min1 = numbers.stream().min((x, y) -> x.compareTo(y));
         System.out.println("Minimum value: " + min1.orElse(null));
         System.out.println("Maximum value: " + max1.orElse(null));
