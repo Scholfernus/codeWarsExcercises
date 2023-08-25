@@ -3,7 +3,7 @@ package org.example.w3resource.com.genericMethods;
 import java.util.Arrays;
 import java.util.List;
 
-public class SumOFOddAndEvenNumbers {
+public class SumOfOddAndEvenNumbers {
     public static <T extends Number> void calculateNumberSum(List<T> numbers) {
         double evenSum = 0;
         double oddSum = 0;
