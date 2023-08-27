@@ -8,7 +8,7 @@ public class Book {
     private String title;
     private String author;
     private String ISBN;
-    private static ArrayList<Book>bookCollection = new ArrayList<Book>();
+    private static ArrayList<Book> bookCollection = new ArrayList<Book>();
 
     public Book(String title, String author, String ISBN) {
         this.title = title;
@@ -45,17 +45,31 @@ public class Book {
     }
 
     public static void removeBook(Book book) {
-    bookCollection.remove(book);
+        bookCollection.remove(book);
     }
-    public  static ArrayList<Book>getBookCollection(){
+
+    public static ArrayList<Book> getBookCollection() {
         return bookCollection;
     }
 }
 
 class Main4 {
     public static void main(String[] args) {
-        Book book = new Book("War", "Dostojewski", "12354HN45TE");
+        Book book1 = new Book("War", "Dostojewski", "12354HN45TE");
         Book book2 = new Book("An Introduction to Python", "Guido van Rossum", "9355423489");
-//        myLibrary.add("Harry 5", "Rowling", "23GJRTOKJ#");
+        Book.addBook((book1));
+        Book.addBook(book2);
+        ArrayList<Book> bookCollection = Book.getBookCollection();
+        System.out.println("List of books: ");
+        for (Book book : bookCollection) {
+            System.out.println(book.getTitle() + " by " + book.getAuthor() + ", ISBN " + book.getISBN());
+            Book.removeBook(book1);
+            System.out.println("\nAfter removing " + book1.getTitle() + ": ");
+            System.out.println("List of books:");
+            for (Book books : bookCollection) {
+                System.out.println(books.getTitle() + " by " + books.getAuthor() + ", ISBN: " + books.getISBN());
+            }
+        }
+        //        myLibrary.add("Harry 5", "Rowling", "23GJRTOKJ#");
     }
 }
