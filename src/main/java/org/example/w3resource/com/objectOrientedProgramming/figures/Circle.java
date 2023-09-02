@@ -13,7 +13,7 @@ public class Circle extends Shape {
     }
 
     @Override
-    public double perimeter() {
+    public double getPerimeter() {
         return 2 * Math.PI * radius;
     }
 }
