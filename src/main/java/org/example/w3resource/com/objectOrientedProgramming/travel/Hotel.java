@@ -50,10 +50,6 @@ public class Hotel {
         return price;
     }
 
-    public int getConfirmationNumber() {
-        return confirmationNumber;
-    }
-
     public String getHotel() {
         return hotelName;
     }
@@ -64,6 +60,9 @@ public class Hotel {
 
     public Date getDate() {
         return date;
+    }
+    public int getConfirmationNumber() {
+        return confirmationNumber;
     }
     public void setConfirmationNumber(int confirmationNumber){
         this.confirmationNumber = confirmationNumber;
