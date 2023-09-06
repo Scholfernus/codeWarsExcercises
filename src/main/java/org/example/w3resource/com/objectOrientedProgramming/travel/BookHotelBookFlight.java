@@ -14,4 +14,7 @@ public class BookHotelBookFlight {
         System.out.println("Searching for flight s from " + origin + " to " + destination +
                 " on " + date + " for " + numPassengers + " passengers.");
     }
+    public void searchHotels(String location, String checkIn, String checkOut, int numGuests){
+        System.out.println("Searching for hotels in " + location + " from " + checkIn+ " to " + checkOut);
+    }
 }
