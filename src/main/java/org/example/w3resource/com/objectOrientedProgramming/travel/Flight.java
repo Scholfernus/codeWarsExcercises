@@ -47,4 +47,11 @@ public class Flight {
     public double getPrice() {
         return price;
     }
+    public int getConfirmationNumber(){
+        return confirmationNumber;
+    }
+
+    public void setConfirmationNumber(int confirmationNumber) {
+        this.confirmationNumber = confirmationNumber;
+    }
 }
