@@ -16,7 +16,7 @@ public class Flight {
         this.origin = origin;
         this.destination = destination;
         this.date = date;
-        this.numPassengers = numPassengers;
+        this.numPassengers = String.valueOf(numPassengers);
         this.price = price;
     }
 
