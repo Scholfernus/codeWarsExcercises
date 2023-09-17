@@ -28,15 +28,36 @@ public class BookHotelBookFlight {
         this.flights.add(flight);
         System.out.println("Flight booked! Confirmation number: " + confirmationNumber);
     }
-    public void bookHotel(int hotelId, String guestName, String location, String checkIn, String checkOut, int numGuests, double price){
-        Hotel hotel = new Hotel(hotelId, guestName, location,checkIn,checkOut,numGuests,price);
+
+    public void bookHotel(int hotelId, String guestName, String location, String checkIn, String checkOut, int numGuests, double price) {
+        Hotel hotel = new Hotel(hotelId, guestName, location, checkIn, checkOut, numGuests, price);
         int confirmationNumber = generateConfirmationNumber();
         hotel.setConfirmationNumber(confirmationNumber);
         this.hotels.add(hotel);
         System.out.println("Hotel booked! Confirmation number: " + confirmationNumber);
     }
+    public void cancelReservation(int confirmationNumber) {
+        // Cancel a flight or hotel reservation based on confirmation number
+        for (Flight flight : this.flights) {
+            if (flight.getConfirmationNumber() == confirmationNumber) {
+                this.flights.remove(flight);
+                System.out.println("Flight reservation with confirmation number " + confirmationNumber + " cancelled.");
+                return;
+            }
+        }
+        for (Hotel hotel : this.hotels) {
+            if (hotel.getConfirmationNumber() == confirmationNumber) {
+                this.hotels.remove(hotel);
+                System.out.println("Hotel reservation with confirmation number " + confirmationNumber + " cancelled.");
+                return;
+            }
+        }
+        System.out.println("No reservation found with confirmation number " + confirmationNumber + ".");
+    }
+
     private int generateConfirmationNumber() {
         Random random = new Random();
         return random.nextInt(900000) + 100000;
     }
 }
+
