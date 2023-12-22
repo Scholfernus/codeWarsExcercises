@@ -11,7 +11,7 @@ public class Ex41 {
         String letter = scanner.nextLine();
         char[] array = letter.toCharArray();
         int value1 = array[0];
-        System.out.println("The ASCII value of letter" + letter + " is " + value1);
+        System.out.println("The ASCII value of letter " + letter + " is " + value1);
         System.out.println(value1);
     }
 }
