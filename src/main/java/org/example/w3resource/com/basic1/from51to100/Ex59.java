@@ -1,4 +1,4 @@
-package org.example.w3resource.com.basic1;
+package org.example.w3resource.com.basic1.from51to100;
 
 public class Ex59 {
     // Write a Java program to convert a string into lowercase.

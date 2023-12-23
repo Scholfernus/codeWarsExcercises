@@ -1,4 +1,4 @@
-package org.example.w3resource.com.basic1;
+package org.example.w3resource.com.basic1.from51to100;
 
 import java.util.Scanner;
 
