@@ -6,15 +6,22 @@ public class Ex39 {
     //Write a Java program to create and display a unique three-digit number using 1, 2, 3, 4.
     // Also count how many three-digit numbers are there.
     public static void main(String[] args) {
-        int[] array = {1, 2, 3, 4};
-        Random random = new Random();
-        int []array2 = new int[3];
-        for (int i = 1; i < 3; i++) {
-            int number = random.nextInt(array[i]);
-            array2[i]=number;
+        int amount = 0; // Initialize a counter for three-digit numbers
+
+        // Iterate through three nested loops to generate all unique three-digit numbers
+        for (int i = 1; i <= 4; i++) {
+            for (int j = 1; j <= 4; j++) {
+                for (int k = 1; k <= 4; k++) {
+                    // Check if 'i,' 'j,' and 'k' are all different (not equal)
+                    if (k != i && k != j && i != j) {
+                        amount++; // Increment the counter
+                        System.out.println(i + "" + j + "" + k); // Print the generated three-digit number
+                    }
+                }
+            }
         }
-        for (int number:array2) {
-            System.out.print(number);
-        }
+
+        // Display the total number of generated three-digit numbers
+        System.out.println("Total number of the three-digit-number is " + amount);
     }
 }
