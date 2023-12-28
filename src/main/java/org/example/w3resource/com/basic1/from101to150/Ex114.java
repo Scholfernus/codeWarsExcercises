@@ -2,7 +2,7 @@ package org.example.w3resource.com.basic1.from101to150;
 
 import java.util.Arrays;
 
-public class x114 {
+public class Ex114 {
     //    Write a Java program that rotates a string by an offset (rotate from left to right.
     public static void main(String[] args) {
         // Input string
