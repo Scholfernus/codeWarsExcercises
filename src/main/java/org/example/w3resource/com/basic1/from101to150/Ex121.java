@@ -1,7 +1,8 @@
 package org.example.w3resource.com.basic1.from101to150;
 
-import java.util.*;
-import java.util.stream.Stream;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class Ex121 {
     //    Write a Java program to reverse a linked list.
