@@ -24,3 +24,11 @@ public class Ex3 {
         System.out.println("The greatest: " + greatest);
     }
 }
+// int numb3 = scanner.nextInt();
+//        if (numb2>numb1&&numb2>numb3){
+//            System.out.println(numb2);
+//        } else if (numb3>numb1&&numb3>numb2) {
+//            System.out.println(numb3);
+//        }else {
+//            System.out.println(numb1);
+//        }
