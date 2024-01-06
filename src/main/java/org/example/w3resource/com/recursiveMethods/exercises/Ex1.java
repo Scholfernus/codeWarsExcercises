@@ -1,4 +1,4 @@
-package org.example.w3resource.com.recursiveMethods;
+package org.example.w3resource.com.recursiveMethods.exercises;
 
 import java.util.Scanner;
 
