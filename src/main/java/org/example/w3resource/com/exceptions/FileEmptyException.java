@@ -5,6 +5,9 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class FileEmptyException extends Throwable {
+    public FileEmptyException(String fileIsEmpty) {
+    }
+
     public static void main(String[] args) {
         try {
             fileEmpty("file.txt");
