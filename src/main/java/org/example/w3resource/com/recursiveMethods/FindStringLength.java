@@ -28,7 +28,7 @@ public class FindStringLength {
   }
 
   public static void main(String[] args) {
-    String input = "Java Ex10!";
+    String input = "Java Ex11!";
     int length = calculateStringLength(input);
     System.out.println("The length of the string \"" + input + "\" is: " + length);
   }
