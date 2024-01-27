@@ -10,26 +10,42 @@ public class Ex14 {
     //    Write a Java program to create a class called "School" with attributes for students, teachers, and classes,
 //    and methods to add and remove students and teachers, and to create classes.
     public static void main(String[] args) {
-        School newSchool = new School(new ArrayList<>(),new ArrayList<>(),new ArrayList<>());
+        School newSchool = new School(new ArrayList<>(), new ArrayList<>(), new ArrayList<>());
         Students student1 = new Students("Novak", 23);
         Students student2 = new Students("Yanik", 22);
         Students student3 = new Students("Smith", 21);
         Students student4 = new Students("Creep", 20);
+        Students student5 = new Students("Mats Yatzille", 15);
+        Students student6 = new Students("Karolina Ralf", 16);
+        Students student7 = new Students("Felicia Anuschka", 16);
+        Students student8 = new Students("Norbert Micha", 15);
         newSchool.addStudent(student1);
         newSchool.addStudent(student2);
         newSchool.addStudent(student3);
         newSchool.addStudent(student4);
+        newSchool.addStudent(student5);
+        newSchool.addStudent(student6);
+        newSchool.addStudent(student7);
+        newSchool.addStudent(student8);
         Teacher newTeacher1 = new Teacher("Lewinsky", "Biology");
         Teacher newTeacher2 = new Teacher("Kowalski", "Geography");
         Teacher newTeacher3 = new Teacher("Maniac", "Philosophies");
         newSchool.addTeacher(newTeacher1);
         newSchool.addTeacher(newTeacher2);
         newSchool.addTeacher(newTeacher3);
-        Classes newClass = new Classes("IT",new Teacher("Lord", "IT"));
+        Classes iTclass = new Classes("IT", new Teacher("Lord", "IT"));
+        Classes poetryClass = new Classes("Poetry", newTeacher3);
+        iTclass.addStudent(student4);
+        poetryClass.addStudent(student3);
+        poetryClass.addStudent(student5);
+        poetryClass.addStudent(student6);
+        poetryClass.addStudent(student8);
         System.out.println(newSchool);
-        System.out.println(newClass);
+        System.out.println(iTclass);
+        System.out.println(poetryClass);
     }
 }
+
 @Getter
 @Setter
 @AllArgsConstructor
@@ -121,5 +137,9 @@ class Classes {
                 ", teacher=" + teacher +
                 ", students=" + students +
                 '}';
+    }
+
+    public void addStudent(Students student) {
+        students.add(student);
     }
 }
