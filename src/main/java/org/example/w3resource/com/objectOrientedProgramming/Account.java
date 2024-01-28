@@ -1,7 +1,10 @@
 package org.example.w3resource.com.objectOrientedProgramming;
 
+import lombok.Getter;
+
 import java.util.ArrayList;
 
+@Getter
 public class Account {
     private String name;
     private String accountNumber;
@@ -13,24 +16,12 @@ public class Account {
         this.balance = balance;
     }
 
-    public String getName() {
-        return name;
-    }
-
     public void setName(String name) {
         this.name = name;
     }
 
-    public String getAccountNumber() {
-        return accountNumber;
-    }
-
     public void setAccountNumber(String accountNumber) {
         this.accountNumber = accountNumber;
-    }
-
-    public double getBalance() {
-        return balance;
     }
 
     public void setBalance(double balance) {
@@ -42,7 +33,11 @@ public class Account {
     }
 
     public void withdraw(double amount) {
-        balance -= amount;
+        if (balance<100){
+            System.out.println("Operation is blocked, you've got enough money");
+        }else {
+            balance -= amount;
+        }
     }
 
     public String getAccountInfo() {
@@ -50,8 +45,9 @@ public class Account {
     }
 }
 
+@Getter
 class Bank {
-    private ArrayList<Account> accounts;
+    private final ArrayList<Account> accounts;
 
     public Bank() {
         accounts = new ArrayList<Account>();
@@ -73,9 +69,6 @@ class Bank {
         account.withdraw(amount);
     }
 
-    public ArrayList<Account> getAccounts() {
-        return accounts;
-    }
 }
 
 class Main6 {
