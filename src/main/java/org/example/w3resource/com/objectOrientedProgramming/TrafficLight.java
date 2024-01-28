@@ -1,5 +1,13 @@
 package org.example.w3resource.com.objectOrientedProgramming;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@RequiredArgsConstructor
 public class TrafficLight {
     private String color;
     private int duration;
@@ -21,16 +29,8 @@ public class TrafficLight {
         return color.equals("red");
     }
 
-    public String getColor() {
-        return color;
-    }
-
     public void setColor(String color) {
         this.color = color;
-    }
-
-    public int getDuration() {
-        return duration;
     }
 
     public void setDuration(int duration) {
