@@ -5,6 +5,7 @@ public class Ex3 {
     // Circle, Rectangle, and Triangle. Override the calculateArea() method in each subclass to calculate and return
     //    the shape's area.
     public static void main(String[] args) {
+//        Poprawa kodu
         Circle circle = new Circle(4);
         System.out.println("Area of Circle: " + circle.calculateArea());
 
