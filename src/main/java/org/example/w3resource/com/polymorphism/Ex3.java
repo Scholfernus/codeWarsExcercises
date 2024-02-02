@@ -2,8 +2,8 @@ package org.example.w3resource.com.polymorphism;
 
 public class Ex3 {
     //    Write a Java program to create a base class Shape with a method called calculateArea(). Create three subclasses:
-//    Circle, Rectangle, and Triangle. Override the calculateArea() method in each subclass to calculate and return
-//    the shape's area.
+    // Circle, Rectangle, and Triangle. Override the calculateArea() method in each subclass to calculate and return
+    //    the shape's area.
     public static void main(String[] args) {
         Circle circle = new Circle(4);
         System.out.println("Area of Circle: " + circle.calculateArea());
@@ -15,12 +15,14 @@ public class Ex3 {
         System.out.println("\nArea of Triangle: " + triangle.calculateArea());
     }
 }
-class Shape{
-    public double calculateArea(){
+
+class Shape {
+    public double calculateArea() {
         return 0;
     }
 }
-class Circle extends Shape{
+
+class Circle extends Shape {
     private final double radius;
 
     public Circle(double radius) {
@@ -29,10 +31,11 @@ class Circle extends Shape{
 
     @Override
     public double calculateArea() {
-        return Math.PI*radius*radius;
+        return Math.PI * radius * radius;
     }
 }
-class Rectangle extends Shape{
+
+class Rectangle extends Shape {
     private final int side1;
     private final int side2;
 
@@ -43,12 +46,13 @@ class Rectangle extends Shape{
 
     @Override
     public double calculateArea() {
-        return side1*side2;
+        return side1 * side2;
     }
 }
+
 class Triangle extends Shape {
-    private double base;
-    private double height;
+    private final double base;
+    private final double height;
 
     public Triangle(double base, double height) {
         this.base = base;
