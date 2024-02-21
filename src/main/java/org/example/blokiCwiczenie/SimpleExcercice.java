@@ -1,6 +1,5 @@
 package org.example.blokiCwiczenie;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class SimpleExcercice {
