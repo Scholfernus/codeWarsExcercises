@@ -22,8 +22,10 @@ public class AddTwiceDivideSub {
                 .mapToInt(n -> n * 2)
                 .sum();
         System.out.println("Suma liczb wynosi: " + sum);
-        List<String>names = Arrays.asList("John", "Alice", "Bob", "Charlie");
+        List<String>names = Arrays.asList("John", "Alice", "Bob", "Charlie","Barbara");
         names.forEach(name-> System.out.println("Hello "+name));
+        names.stream().filter(n->n.startsWith("B"))
+                .forEach(n -> System.out.println("Imiona na \"B ->" + n));
     }
 
     static void Add(int a, int b) {
